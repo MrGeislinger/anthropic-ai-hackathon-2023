@@ -4,6 +4,14 @@ import anthropic
 MAX_TOKENS = 300
 # From https://console.anthropic.com/docs/api/reference#parameters
 MODELS: dict[str,str] = {
+    "claude-2": (
+        100_000,
+        "Latest version of Claude 2",
+    ),
+    "claude-2.0": (
+        100_000,
+        "???",
+    ),
     "claude-instant-v1.1-100k": (
         100_000,
         "An enhanced version of claude-instant-v1.1 with a 100,000 token"
